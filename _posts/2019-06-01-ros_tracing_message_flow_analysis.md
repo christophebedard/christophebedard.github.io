@@ -42,7 +42,7 @@ Early on in this project, I considered targeting ROS 2. However, as it was still
 
 A presentation at ROSCon 2017, titled ["Determinism in ROS -- or when things break /sometimes/ and how to fix it..."](https://vimeo.com/236186712) exposed how ROS' design does not guarantee determinism in execution. This is actually what piqued my curiosity at first, since I was a ROS user and had started to learn about tracing, and it eventually led to this project.
 
-In this case, lack of determinism can be seen as merely a symptom. This led me to search for possible causes, one of which might be network/communications [1][2][3][4][5]. For latencies, which might lead to lack of determinism, critical path analyses can help identify the actual root cause [6][7][8][9].
+In this case, lack of determinism can be seen as merely a symptom. This led me to search for possible causes, one of which might be network/communications <a href="#1">[1]</a><a href="#2">[2]</a><a href="#3">[3]</a><a href="#4">[4]</a><a href="#5">[5]</a>. For latencies, which might lead to lack of determinism, critical path analyses can help identify the actual root cause <a href="#6">[6]</a><a href="#7">[7]</a><a href="#8">[8]</a><a href="#9">[9]</a>.
 
 As for tools, many are distributed along with ROS to help users and developers. [`rqt_graph`](http://wiki.ros.org/rqt_graph) can create a graph of publisher/subscriber relations between nodes. It can also show publishing rates. Similarly, the ROS CLI tools (e.g. `rostopic`) can help debug basic pub/sub issues.
 
@@ -196,12 +196,12 @@ I would also like to thank the Trace Compass team at Ericsson for
 
 ## References
 
-[1] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Real-time Linux communications: an evaluation of the Linux communication stack for real-time robotic applications,” arXiv:1808.10821 [cs], Aug. 2018.  
-[2] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, I. M. Goenaga, L. A. Kirschgens, and V. M. Vilches, “Time Synchronization in modular collaborative robots,” arXiv:1809.07295 [cs], Sep. 2018.  
-[3] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Time-Sensitive Networking for robotics,” arXiv:1804.07643 [cs], Apr. 2018.  
-[4] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications,” arXiv:1809.02595 [cs], Sep. 2018.  
-[5] Y.-P. Wang, W. Tan, X.-Q. Hu, D. Manocha, and S.-M. Hu, “TZC: Efficient Inter-Process Communication for Robotics Middleware with Partial Serialization,” arXiv:1810.00556 [cs], Oct. 2018.  
-[6] F. Giraldeau and M. Dagenais, “Wait Analysis of Distributed Systems Using Kernel Tracing,” IEEE Transactions on Parallel and Distributed Systems, vol. 27, no. 8, pp. 2450–2461, Aug. 2016.  
-[7] F. Doray and M. Dagenais, “Diagnosing Performance Variations by Comparing Multi-Level Execution Traces,” IEEE Transactions on Parallel and Distributed Systems, pp. 1–1, 2016.  
-[8] P.-M. Fournier and M. R. Dagenais, “Analyzing blocking to debug performance problems on multi-core systems,” ACM SIGOPS Operating Systems Review, vol. 44, no. 2, p. 77, Apr. 2010.  
-[9] C.-Q. Yang and B. P. Miller, “Critical path analysis for the execution of parallel and distributed programs,” in [1988] Proceedings. The 8th International Conference on Distributed, San Jose, CA, USA, 1988, pp. 366–373.  
+[<a name="1">1</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Real-time Linux communications: an evaluation of the Linux communication stack for real-time robotic applications,” arXiv:1808.10821 [cs], Aug. 2018.  
+[<a name="2">2</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, I. M. Goenaga, L. A. Kirschgens, and V. M. Vilches, “Time Synchronization in modular collaborative robots,” arXiv:1809.07295 [cs], Sep. 2018.  
+[<a name="3">3</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Time-Sensitive Networking for robotics,” arXiv:1804.07643 [cs], Apr. 2018.  
+[<a name="4">4</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications,” arXiv:1809.02595 [cs], Sep. 2018.  
+[<a name="5">5</a>] Y.-P. Wang, W. Tan, X.-Q. Hu, D. Manocha, and S.-M. Hu, “TZC: Efficient Inter-Process Communication for Robotics Middleware with Partial Serialization,” arXiv:1810.00556 [cs], Oct. 2018.  
+[<a name="6">6</a>] F. Giraldeau and M. Dagenais, “Wait Analysis of Distributed Systems Using Kernel Tracing,” IEEE Transactions on Parallel and Distributed Systems, vol. 27, no. 8, pp. 2450–2461, Aug. 2016.  
+[<a name="7">7</a>] F. Doray and M. Dagenais, “Diagnosing Performance Variations by Comparing Multi-Level Execution Traces,” IEEE Transactions on Parallel and Distributed Systems, pp. 1–1, 2016.  
+[<a name="8">8</a>] P.-M. Fournier and M. R. Dagenais, “Analyzing blocking to debug performance problems on multi-core systems,” ACM SIGOPS Operating Systems Review, vol. 44, no. 2, p. 77, Apr. 2010.  
+[<a name="9">9</a>] C.-Q. Yang and B. P. Miller, “Critical path analysis for the execution of parallel and distributed programs,” in [1988] Proceedings. The 8th International Conference on Distributed, San Jose, CA, USA, 1988, pp. 366–373.  
