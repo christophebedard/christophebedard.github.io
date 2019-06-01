@@ -46,11 +46,11 @@ In this case, lack of determinism can be seen as merely a symptom. This led me t
 
 As for tools, many are distributed along with ROS to help users and developers. [`rqt_graph`](http://wiki.ros.org/rqt_graph) can create a graph of publisher/subscriber relations between nodes. It can also show publishing rates. Similarly, the ROS CLI tools (e.g. `rostopic`) can help debug basic pub/sub issues.
 
-Other tools are available. The [`diagnostics` package](http://wiki.ros.org/diagnostics) can collect diagnostics data for analysis. The [`performance_test` package](https://github.com/apexai/performance_test) for ROS 2 can test the performance of a communications middleware.
+Other tools are available. The `diagnostics` [package](http://wiki.ros.org/diagnostics) can collect diagnostics data for analysis. The `performance_test` [package](https://github.com/apexai/performance_test) for ROS 2 can test the performance of a communications middleware.
 
 However, all of the tools or solutions mentioned above cannot provide a view of the actual execution. Besides, the performance overhead of using higher-level log aggregators (e.g. as a ROS node) is non-negligible.
 
-The [`tracetools` package](https://github.com/bosch-robotics-cr/tracetools) enables ROS tracing along with the instrumentation. However, it does not offer analysis tools.
+The `tracetools` [package](https://github.com/bosch-robotics-cr/tracetools) enables ROS tracing along with the instrumentation. However, it does not offer analysis tools.
 
 Trace Compass offers a [control flow view](https://github.com/tuxology/tracevizlab/tree/master/labs/101-trace-navigation-in-tracecompass), showing the state of threads over time. By selecting one particular thread, a user can launch a [critical path analysis](https://github.com/tuxology/tracevizlab/tree/master/labs/102-tracing-wget-critical-path).
 
