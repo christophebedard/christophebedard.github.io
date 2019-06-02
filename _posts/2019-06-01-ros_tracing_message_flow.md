@@ -159,7 +159,7 @@ void callbackFunction(const std_msgs::String::ConstPtr& msg) {
     int payload = get_payload(msg->data);
     int new_payload = payload + pow(payload, 2);
     if (node_i == 2) {
-        ros::Duration(0.1).sleep();
+        ros::Duration(0.1).sleep(); // <---------
     }
     next_msg.data = MSG_CONTENT_PREFIX + std::to_string(new_payload);
     pub.publish(next_msg);
