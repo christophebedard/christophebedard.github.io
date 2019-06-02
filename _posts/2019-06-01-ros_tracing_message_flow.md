@@ -14,9 +14,11 @@ comments: false
 
 ## Introduction
 
-Robotics software development can benefit from tracing and the low-overhead analyses it can provide. The overall goal of this project was to first look into where ROS could benefit from such analyses, and then work towards that.
+Tracing can be invaluable when diagnosing complex systems, especially when problems are hard to reproduce using traditional tools. Robotics software development can benefit from tracing and the low-overhead analyses it can provide.
 
-This first section will introduce both ROS and Trace Compass for people who have used only one (or none) of them. I will also talk about robotics and tracing in general. The second and third sections will present my work along with some examples.
+The overall goal of this project was to first look into where ROS could benefit from such analyses, and then work towards that.
+
+This first section will introduce both ROS and Trace Compass for people who have used only one (or none) of them. I will also talk about robotics and tracing in general. The second and third sections will present my work along with an example.
 
 Finally, I will conclude and briefly talk about possible future work related to this project.
 
