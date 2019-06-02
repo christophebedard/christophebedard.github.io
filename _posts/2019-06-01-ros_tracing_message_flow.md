@@ -176,13 +176,13 @@ Many elements could be improved, and many new paths could be explored.
 
 First and foremost, other than not supporting UDP and not explicitly supporting namespaces, there are many limitations and simplifications with the current implementation, as most of the traces I used were taken from executions of (very synthetic) test cases.
 
-To link a message between two endpoints, this selects the first corresponding TCP packet that is queued (`net_dev_queue`) after the `subscriber_link_message_write` event, and then selects the next `subscription_message_queued` event after the matching `netif_receive_skb` event. This assumption about the sequence of events might not be always valid. Also, it has not been tested with messages bigger than a single TCP packet payload.
+To link a message between two endpoints, this selects the first corresponding TCP packet that is queued (`net_dev_queue`) after the `subscriber_link_message_write` event, and then selects the next `subscription_message_queued` event after the matching `netif_receive_skb` event. This assumption about the sequence of events might not be always valid. Also, it has not been tested with messages bigger than the maximum payload size of a TCP packet.
 
-Furthermore, only callbacks were considered as the link between two messages (received & published). Nodes might deal with callbacks and message publishing separately, e.g. to publish at a fixed rate independently of the messages received. In the same sense, message flows do not have to be linear! In order words, one incoming message can turn into multiple outgoing messages.
+Furthermore, callbacks were considered as the only possible link between two messages (received & published). Nodes might deal with callbacks and message publishing separately, e.g. to publish at a fixed rate independently of the messages received. In the same sense, message flows do not have to be linear! In order words, one incoming message can turn into multiple outgoing messages.
 
-Also, Trace Compass can easily aggregate multiple traces from multiple hosts. This is very relevant for robotics systems, and thus would be a great avenue to explore.
+Also, Trace Compass can easily aggregate traces from multiple hosts. This is very relevant for robotics systems, and thus would be a great avenue to explore.
 
-Finally, as I mentioned, the message flow analysis could be extended to provide a critical path analysis. This would provide more information about what actually happened while a message was waiting in a queue.
+Finally, as mentioned previously, the message flow analysis could be extended to provide a critical path analysis. This would provide more information about what actually happened while a message was waiting in a queue.
 
 ## Acknowledgements
 
