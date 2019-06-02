@@ -42,7 +42,7 @@ Early on in this project, I considered targeting ROS 2. However, as it was still
 
 A presentation at ROSCon 2017, titled ["Determinism in ROS -- or when things break /sometimes/ and how to fix it..."](https://vimeo.com/236186712) exposed how ROS' design does not guarantee determinism in execution. This is actually what piqued my curiosity at first, since I was a ROS user and had started to learn about tracing, and it eventually led to this project.
 
-In this case, lack of determinism can be seen as merely a symptom. This led me to search for possible causes, one of which might be network/communications <a href="#1">[1]</a><a href="#2">[2]</a><a href="#3">[3]</a><a href="#4">[4]</a><a href="#5">[5]</a>. For latencies, which might lead to lack of determinism, critical path analyses can help identify the actual root cause <a href="#6">[6]</a><a href="#7">[7]</a><a href="#8">[8]</a><a href="#9">[9]</a>.
+In this case, lack of determinism can be seen as merely a symptom. This led me to search for possible causes, one of which might be network/communications {% include ref_link.html start="1" end="5" %}. For latencies, which might lead to lack of determinism, critical path analyses can help identify the actual root cause {% include ref_link.html start="6" end="9" %}.
 
 As for tools, many are distributed along with ROS to help users and developers. [`rqt_graph`](http://wiki.ros.org/rqt_graph) can create a graph of publisher/subscriber relations between nodes. It can also show publishing rates. Similarly, the ROS CLI tools (e.g. `rostopic`) can help debug basic pub/sub issues.
 
