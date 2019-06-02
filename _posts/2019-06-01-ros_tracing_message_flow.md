@@ -186,18 +186,18 @@ Also, Trace Compass can easily aggregate traces from multiple hosts. This is ver
 
 Finally, as mentioned previously, the message flow analysis could be extended to provide a critical path analysis. This would provide more information about what actually happened while a message was waiting in a queue.
 
-## Acknowledgements
-
-This project was done as part of the [UPIR](https://www.polymtl.ca/aide-financiere/bourses/bourses-upir-unite-de-participation-et-dinitiation-la-recherche) program for undergraduate research at Polytechnique Montréal, and was supervised by Michel Dagenais. I thank him for his great input!
-
-I would also like to thank Matthew Khouzam, Geneviève Bastien, and Ingo Lütkebohle.
-
 ## Links
 
 * My [fork](https://github.com/christophebedard/ros_comm/tree/tc4ros) of the [original](https://github.com/boschresearch/ros_comm/tree/melodic-devel) instrumentation fork. I improved and fixed some small things, including adding information about latched messages.
 * My [fork](https://github.com/christophebedard/tracetools/tree/tc4ros) of the [original](https://github.com/bosch-robotics-cr/tracetools) `tracetools` package.
 * [Repo](https://github.com/christophebedard/tracecompass_ros_testcases) with a few test traces and a `.repos` file to easily setup a workspace to trace ROS.
 * [Documentation](https://archive.eclipse.org/tracecompass/doc/stable/org.eclipse.tracecompass.doc.user/Trace-Compass-Incubator.html#Trace_Compass_Incubator) on how to install features from the Trace Compass Incubator, which includes support for ROS traces, the analyses mentioned in this post, and more.
+
+## Acknowledgements
+
+This project was done as part of the [UPIR](https://www.polymtl.ca/aide-financiere/bourses/bourses-upir-unite-de-participation-et-dinitiation-la-recherche) program for undergraduate research at Polytechnique Montréal, and was supervised by Michel Dagenais. I thank him for his great input!
+
+I would also like to thank Matthew Khouzam, Geneviève Bastien, and Ingo Lütkebohle.
 
 ## References
 
