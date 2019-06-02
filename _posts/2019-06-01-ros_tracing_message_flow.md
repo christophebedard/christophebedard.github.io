@@ -84,7 +84,7 @@ This requires us to trace both userspace (ROS) and kernel. Fortunately, we only 
 
 #### Method
 
-In this sub-section, I'll quickly go over some implementation details and how everything actually works!
+In this sub-section, I'll quickly go over some implementation details and explain how the analysis works!
 
 Let's start with some background on Trace Compass. It allows you to build analyses that depend on trace events, the output of other analyses, or both. Some analyses are used to create views to directly display processed data. However, we can use them as models that can be queried by other models or analyses. This abstraction was very useful when designing my final analysis and its dependencies.
 
