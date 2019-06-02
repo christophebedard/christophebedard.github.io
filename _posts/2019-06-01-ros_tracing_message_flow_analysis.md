@@ -7,10 +7,10 @@ tags: [Trace Compass, ROS, tracing, analysis, UPIR]
 comments: false
 ---
 
-<figure>
-    <img src="/assets/img/tc4ros/result.png">
-    <figcaption style="text-align: center;">Outcome of this project: message flow analysis.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/result.png"
+    caption="Outcome of this project: message flow analysis."
+%}
 
 ## Introduction
 
@@ -88,10 +88,10 @@ Let's start with some background on Trace Compass. It allows you to build analys
 
 The first analysis is the connections model. Using the `new_connection` events from `tracetools`, it creates a list of connections between two nodes on a certain topic and includes information about the endpoints.
 
-<figure>
-    <img src="/assets/img/tc4ros/new_connection_events.png">
-    <figcaption style="text-align: center;">Some <code class="highlighter-rouger">new_connection</code> events. Highlighted are two events belonging to the same connection, but opposite endpoints.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/new_connection_events.png"
+    caption="Some <code class="highlighter-rouger">new_connection</code> events. Highlighted are two events belonging to the same connection, but opposite endpoints."
+%}
 
 Another analysis is created to model queues over time. This uses three tracepoints, also from `tracetools`:
 
@@ -101,10 +101,10 @@ Another analysis is created to model queues over time. This uses three tracepoin
 
 These events always include a reference to the associated message, so it can help validate the model.
 
-<figure>
-    <img src="/assets/img/tc4ros/queues_view.png">
-    <figcaption style="text-align: center;">View showing the state of a publisher queue. At this timestamp (thin blue vertical line), the first message is removed from the queue and sent to the subscriber.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/queues_view.png"
+    caption="View showing the state of a publisher queue. At this timestamp (thin blue vertical line), the first message is removed from the queue and sent to the subscriber."
+%}
 
 The third analysis is for network packet exchange. This is the only analysis that needs kernel events: `net_dev_queue` for packet queuing and `netif_receive_skb` for packet reception. Fortunately, Trace Compass already does this! It matches sent/queued and received packets. I only had to filter out `SYN`/`FIN`/`ACK` packets and those which were not associated with a known ROS connection. Then, from a node name, a topic name, and a timestamp at which a message was published, we can figure out when it went through the network, and link it to a message that's received by the subscription.
 
@@ -114,40 +114,40 @@ Finally, we can put everything together! The analysis uses the above analyses to
 
 To illustrate this, I wrote a simple "pipeline" test case. A first node periodically publishes on a topic. A second node does some processing and re-publishes them on another topic. A third node does the same, and a fourth and last node prints the message's contents.
 
-<figure>
-    <img src="/assets/img/tc4ros/testcase_graph.png">
-    <figcaption style="text-align: center;">Graph generated using <code class="highlighter-rouger">rqt_graph</code>.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/testcase_graph.png"
+    caption="Graph generated using <code class="highlighter-rouger">rqt_graph</code>."
+%}
 
 From the view showing queues over time, the user can select an individual message by clicking on it, then hitting the _Follow the selected message_ button.
 
-<figure>
-    <img src="/assets/img/tc4ros/result_select_message.png">
-    <figcaption style="text-align: center;">Message selection. Note that this is the first node in the pipeline, and that, at this moment, the other nodes are not active. Therefore, since latching is enabled, the publisher's queue only keeps the most recent message.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/result_select_message.png"
+    caption="Message selection. Note that this is the first node in the pipeline, and that, at this moment, the other nodes are not active. Therefore, since latching is enabled, the publisher's queue only keeps the most recent message."
+%}
 
 The message flow analysis -- and all its dependencies -- are run. The output can then be viewed in the corresponding view.
 
-<figure>
-    <img src="/assets/img/tc4ros/result_analysis_initial.png">
-    <figcaption style="text-align: center;">Analysis result.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/result_analysis_initial.png"
+    caption="Analysis result."
+%}
 
 There it is! Some sections are hard make out, so we can zoom in.
 
-<figure>
-    <img src="/assets/img/tc4ros/result_analysis_initial_zoom.png">
-    <figcaption style="text-align: center;">Zoomed in.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/result_analysis_initial_zoom.png"
+    caption="Zoomed in."
+%}
 
 We can see the three main states: publisher queue, subscriber queue, and subscriber callback. Of course, the transition represented by the darker arrows between the publisher queue and subscriber queue states includes the network transmission.
 
 However, going back to the original perspective, two states clearly stand out. The first (green) state represents the time spent in the first node's publisher queue, waiting for other nodes to be ready in order to transmit the message. The biggest state, in orange, represents the time spent in a callback inside the third node. We can hover over the state to get more info.
 
-<figure>
-    <img src="/assets/img/tc4ros/result_analysis_hover.png">
-    <figcaption style="text-align: center;">Hovering to get more information.</figcaption>
-</figure>
+{% include figure.html
+    url="/assets/img/tc4ros/result_analysis_hover.png"
+    caption="Hovering to get more information."
+%}
 
 We can see that the message spent around 100 milliseconds in the callback before the next related message was sent to the following publisher queue. In this case, it can be explained by looking at [this node's source code](https://github.com/christophebedard/tracecompass_ros_testcases/blob/melodic-devel/tracecompass_ros_testcases/src/nodes_pipeline/node_m.cpp)!
 
