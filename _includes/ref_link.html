@@ -1,1 +1,2 @@
-{% for num in (include.start .. include.end) %}<a href="#{{ num }}">[{{ num }}]</a>{% endfor %}
+{% assign start = include.start | times: 1 %}{% assign end = include.end | times: 1 %}
+[{% for num in (start .. end) %}<a href="#{{ num }}">{{ num }}</a>{% if num != end %}, {% endif %}{% endfor %}]
