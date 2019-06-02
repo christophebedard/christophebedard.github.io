@@ -66,7 +66,7 @@ My goal was therefore to make a ROS-specific analysis along these lines. I chose
 
 ### Approach
 
-#### Prereqs
+#### Prerequisites
 
 To build this analysis, some information is needed on:
 
