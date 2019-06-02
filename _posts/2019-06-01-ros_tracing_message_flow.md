@@ -82,7 +82,7 @@ Finally, we need information on network packet exchanges. Although this isn't re
 
 This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this, so it saves us a lot of memory!
 
-#### How
+#### Method
 
 In this sub-section, I'll quickly go over some implementation details and how everything actually works!
 
