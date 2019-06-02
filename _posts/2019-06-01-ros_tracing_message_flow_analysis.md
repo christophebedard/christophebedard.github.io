@@ -112,7 +112,7 @@ Finally, we can put everything together! The analysis uses the above analyses to
 
 ## Results/example
 
-To illustrate this, I wrote a simple "pipeline" test case. A first node periodically publishes on a topic. A second node does some processing and re-publishes them on another topic. A third node does the same, and a fourth and last node prints the message's contents.
+To illustrate this, I wrote a simple "pipeline" test case. A first node periodically publishes on a topic. A second node does some processing and re-publishes them on another topic. A third node does the same, and a fourth and last node prints the message's content.
 
 {% include figure.html
     url="/assets/img/tc4ros/testcase_graph.png"
