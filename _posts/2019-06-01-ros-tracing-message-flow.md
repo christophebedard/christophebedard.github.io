@@ -12,6 +12,10 @@ comments: false
     caption="Outcome of this project: message flow analysis for ROS using Trace Compass."
 %}
 
+{% include tl-dr.html
+    content="Tracing is a very powerful tool for software development, especially in robotics. Using Trace Compass and existing ROS instrumentation, I built an analysis that can show the path of a message through a ROS stack. This work can serve as a proof-of-concept for future endeavors."
+%}
+
 1. TOC
 {:toc}
 
