@@ -196,12 +196,21 @@ I would also like to thank the Trace Compass team at Ericsson for
 
 ## References
 
-[<a name="1">1</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Real-time Linux communications: an evaluation of the Linux communication stack for real-time robotic applications,” arXiv:1808.10821 [cs], Aug. 2018.  
-[<a name="2">2</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, I. M. Goenaga, L. A. Kirschgens, and V. M. Vilches, “Time Synchronization in modular collaborative robots,” arXiv:1809.07295 [cs], Sep. 2018.  
-[<a name="3">3</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Time-Sensitive Networking for robotics,” arXiv:1804.07643 [cs], Apr. 2018.  
-[<a name="4">4</a>] C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications,” arXiv:1809.02595 [cs], Sep. 2018.  
-[<a name="5">5</a>] Y.-P. Wang, W. Tan, X.-Q. Hu, D. Manocha, and S.-M. Hu, “TZC: Efficient Inter-Process Communication for Robotics Middleware with Partial Serialization,” arXiv:1810.00556 [cs], Oct. 2018.  
-[<a name="6">6</a>] F. Giraldeau and M. Dagenais, “Wait Analysis of Distributed Systems Using Kernel Tracing,” IEEE Transactions on Parallel and Distributed Systems, vol. 27, no. 8, pp. 2450–2461, Aug. 2016.  
-[<a name="7">7</a>] F. Doray and M. Dagenais, “Diagnosing Performance Variations by Comparing Multi-Level Execution Traces,” IEEE Transactions on Parallel and Distributed Systems, pp. 1–1, 2016.  
-[<a name="8">8</a>] P.-M. Fournier and M. R. Dagenais, “Analyzing blocking to debug performance problems on multi-core systems,” ACM SIGOPS Operating Systems Review, vol. 44, no. 2, p. 77, Apr. 2010.  
-[<a name="9">9</a>] C.-Q. Yang and B. P. Miller, “Critical path analysis for the execution of parallel and distributed programs,” in [1988] Proceedings. The 8th International Conference on Distributed, San Jose, CA, USA, 1988, pp. 366–373.  
+{% include ref_dest.html n="1" %}
+C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Real-time Linux communications: an evaluation of the Linux communication stack for real-time robotic applications,” arXiv:1808.10821 [cs], Aug. 2018.  
+{% include ref_dest.html n="2" %}
+C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, I. M. Goenaga, L. A. Kirschgens, and V. M. Vilches, “Time Synchronization in modular collaborative robots,” arXiv:1809.07295 [cs], Sep. 2018.  
+{% include ref_dest.html n="3" %}
+C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Time-Sensitive Networking for robotics,” arXiv:1804.07643 [cs], Apr. 2018.  
+{% include ref_dest.html n="4" %}
+C. S. V. Gutiérrez, L. U. S. Juan, I. Z. Ugarte, and V. M. Vilches, “Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications,” arXiv:1809.02595 [cs], Sep. 2018.  
+{% include ref_dest.html n="5" %}
+Y.-P. Wang, W. Tan, X.-Q. Hu, D. Manocha, and S.-M. Hu, “TZC: Efficient Inter-Process Communication for Robotics Middleware with Partial Serialization,” arXiv:1810.00556 [cs], Oct. 2018.  
+{% include ref_dest.html n="6" %}
+F. Giraldeau and M. Dagenais, “Wait Analysis of Distributed Systems Using Kernel Tracing,” IEEE Transactions on Parallel and Distributed Systems, vol. 27, no. 8, pp. 2450–2461, Aug. 2016.  
+{% include ref_dest.html n="7" %}
+F. Doray and M. Dagenais, “Diagnosing Performance Variations by Comparing Multi-Level Execution Traces,” IEEE Transactions on Parallel and Distributed Systems, pp. 1–1, 2016.  
+{% include ref_dest.html n="8" %}
+P.-M. Fournier and M. R. Dagenais, “Analyzing blocking to debug performance problems on multi-core systems,” ACM SIGOPS Operating Systems Review, vol. 44, no. 2, p. 77, Apr. 2010.  
+{% include ref_dest.html n="9" %}
+C.-Q. Yang and B. P. Miller, “Critical path analysis for the execution of parallel and distributed programs,” in [1988] Proceedings. The 8th International Conference on Distributed, San Jose, CA, USA, 1988, pp. 366–373.  
