@@ -9,7 +9,7 @@ comments: false
 
 {% include figure.html
     url="/assets/img/tc4ros/result.png"
-    caption="Outcome of this project: message flow analysis for ROS."
+    caption="Outcome of this project: message flow analysis for ROS using Trace Compass."
 %}
 
 ## Introduction
