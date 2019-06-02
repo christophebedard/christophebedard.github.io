@@ -12,6 +12,9 @@ comments: false
     caption="Outcome of this project: message flow analysis for ROS using Trace Compass."
 %}
 
+1. TOC
+{:toc}
+
 ## Introduction
 
 Tracing can be invaluable when diagnosing complex systems, especially when problems are hard to reproduce using traditional tools. Robotics software development can benefit from tracing and the low-overhead analyses it can provide.
@@ -25,12 +28,14 @@ Finally, I will conclude and briefly talk about possible future work related to 
 ### Context
 
 #### ROS
+{: .no_toc}
 
 [Robot Operating System](http://www.ros.org/) (ROS) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
 
 Its main feature is probably the implementation of the publish-subscribe pattern. [Nodes](http://wiki.ros.org/ROS/Concepts), which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
 
 #### Trace Compass
+{: .no_toc}
 
 [Trace Compass](http://tracecompass.org) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
 
@@ -67,6 +72,7 @@ My goal was therefore to make a ROS-specific analysis along these lines. I chose
 ### Approach
 
 #### Prerequisites
+{: .no_toc}
 
 To build this analysis, some information is needed on:
 
@@ -83,6 +89,7 @@ Finally, we need information on network packet exchanges. Although this isn't re
 This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this, so it saves us a lot of memory!
 
 #### Method
+{: .no_toc}
 
 In this sub-section, I'll quickly go over some implementation details and explain how the analysis works!
 
