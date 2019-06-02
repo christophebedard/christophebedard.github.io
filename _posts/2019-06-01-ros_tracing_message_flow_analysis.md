@@ -90,7 +90,7 @@ The first analysis is the connections model. Using the `new_connection` events f
 
 {% include figure.html
     url="/assets/img/tc4ros/new_connection_events.png"
-    caption="Some <code class="highlighter-rouger">new_connection</code> events. Highlighted are two events belonging to the same connection, but opposite endpoints."
+    caption="Some <code class='highlighter-rouge'>new_connection</code> events. Highlighted are two events belonging to the same connection, but opposite endpoints."
 %}
 
 Another analysis is created to model queues over time. This uses three tracepoints, also from `tracetools`:
@@ -116,7 +116,7 @@ To illustrate this, I wrote a simple "pipeline" test case. A first node periodic
 
 {% include figure.html
     url="/assets/img/tc4ros/testcase_graph.png"
-    caption="Graph generated using <code class="highlighter-rouger">rqt_graph</code>."
+    caption="Graph generated using <code class='highlighter-rouge'>rqt_graph</code>."
 %}
 
 From the view showing queues over time, the user can select an individual message by clicking on it, then hitting the _Follow the selected message_ button.
