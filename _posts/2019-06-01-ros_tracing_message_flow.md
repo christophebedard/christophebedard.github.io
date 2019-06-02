@@ -194,7 +194,7 @@ I would also like to thank Matthew Khouzam, Geneviève Bastien, and Ingo Lütkeb
 
 ## Links
 
-* My [fork](https://github.com/christophebedard/ros_comm/tree/tc4ros) of the [original instrumentation fork](https://github.com/boschresearch/ros_comm/tree/melodic-devel). I improved and fixed some small things, including adding information about latched messages.
+* My [fork](https://github.com/christophebedard/ros_comm/tree/tc4ros) of the [original](https://github.com/boschresearch/ros_comm/tree/melodic-devel) instrumentation fork. I improved and fixed some small things, including adding information about latched messages.
 * My [fork](https://github.com/christophebedard/tracetools/tree/tc4ros) of the [original](https://github.com/bosch-robotics-cr/tracetools) `tracetools` package.
 * [Repo](https://github.com/christophebedard/tracecompass_ros_testcases) with a few test traces and a `.repos` file to easily setup a workspace to trace ROS.
 * [Documentation](https://archive.eclipse.org/tracecompass/doc/stable/org.eclipse.tracecompass.doc.user/Trace-Compass-Incubator.html#Trace_Compass_Incubator) on how to install features from the Trace Compass Incubator, which includes support for ROS traces, the analyses mentioned in this post, and more.
