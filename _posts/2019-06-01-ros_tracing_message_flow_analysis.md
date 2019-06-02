@@ -90,7 +90,7 @@ The first analysis is the connections model. Using the `new_connection` events f
 
 {% include figure.html
     url="/assets/img/tc4ros/new_connection_events.png"
-    caption="Some <code class='highlighter-rouge'>new_connection</code> events. Highlighted are two events belonging to the same connection, but opposite endpoints."
+    caption="Some <code class='highlighter-rouge'>new_connection</code> events. Highlighted are two events belonging to the same connection, on opposite endpoints."
 %}
 
 Another analysis is created to model queues over time. This uses three tracepoints, also from `tracetools`:
