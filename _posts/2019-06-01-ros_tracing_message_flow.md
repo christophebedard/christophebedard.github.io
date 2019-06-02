@@ -28,7 +28,7 @@ Finally, I will conclude and briefly talk about possible future work related to 
 
 [Robot Operating System](http://www.ros.org/) (ROS) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
 
-Its main feature is probably the implementation of the publish-subscribe pattern. Nodes, which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
+Its main feature is probably the implementation of the publish-subscribe pattern. [Nodes](http://wiki.ros.org/ROS/Concepts), which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
 
 #### Trace Compass
 
