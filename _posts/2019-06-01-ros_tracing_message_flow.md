@@ -18,7 +18,7 @@ Tracing can be invaluable when diagnosing complex systems, especially when probl
 
 The overall goal of this project was to first look into where ROS could benefit from such analyses, and then work towards that.
 
-This first section will introduce both ROS and Trace Compass for people who have used only one (or none) of them. I will also talk about robotics and tracing in general. The second and third sections will present my work along with an example.
+This first section will introduce both ROS and Trace Compass for people familiar with only one (or none) of them. I will also talk about robotics and tracing in general. The second and third sections will present my work along with an example.
 
 Finally, I will conclude and briefly talk about possible future work related to this project.
 
