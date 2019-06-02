@@ -26,17 +26,17 @@ Finally, I will conclude and briefly talk about possible future work related to 
 
 #### ROS
 
-[Robot Operating System (ROS)](http://www.ros.org/) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
+[Robot Operating System](http://www.ros.org/) (ROS) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
 
-Its main feature is probably the implementation of the publish-subscribe pattern. Nodes, which are "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics and send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
+Its main feature is probably the implementation of the publish-subscribe pattern. Nodes, which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
 
 #### Trace Compass
 
 [Trace Compass](http://tracecompass.org) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
 
-### Topic/goal
+### Topic
 
-My initial goal was to look into where ROS development could benefit from tracing and subsequent analyses, and try to help with that.
+My initial objective was to look into where ROS development could benefit from tracing and subsequent analyses, and try to help with that.
 
 Early on in this project, I considered targeting ROS 2. However, as it was still relatively new and less mature than ROS 1, I went with the latter.
 
@@ -70,23 +70,23 @@ My goal was therefore to make a ROS-specific analysis along these lines. I chose
 
 To build this analysis, some information is needed on:
 
-* connections between nodes
+* connections between publishers and subscribers
 * subscriber/publisher queue states
 * network packet exchanges
 
 We first need to know about connections between nodes. The ROS instrumentation includes a tracepoint for new connections. It includes the address and port of the host and the destination, with an `address:port` pair corresponding to a specific publisher or subscription.
 
-We also need to build a model of the publisher and subscriber queues. To achieve this, we can leverage the relevant tracepoints. These include a tracepoint for when a message is added to the queue, when it's dropped from the queue, and when it leaves the queue (either sent over the network to the subscriber, or given to callback(s)). We can therefore visualize the state of a queue over time!
+We also need to build a model of the publisher and subscriber queues. To achieve this, we can leverage the relevant tracepoints. These include a tracepoint for when a message is added to the queue, when it's dropped from the queue, and when it leaves the queue (either sent over the network to the subscriber, or handed over to a callback). We can therefore visualize the state of a queue over time!
 
 Finally, we need information on network packet exchanges. Although this isn't really necessary for this kind of analysis, it allows us to reliably link a message that gets published to a message that gets received by the subscriber. This is good when building a robust analysis, and it paves the way for a future critical path analysis based on this message flow analysis.
 
-This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this, which saves us a lot of memory!
+This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this, so it saves us a lot of memory!
 
 #### How
 
-In this sub-section, I'll quickly go over some implementation details, and how everything actually works!
+In this sub-section, I'll quickly go over some implementation details and how everything actually works!
 
-Let's start with some background on Trace Compass. It allows you to build analyses that depend on trace events, the output of other analyses, or both. Some analyses are used to create views to directly display the processed data. However, we can use them as models that can be queried by other models or analyses. This abstraction was very useful when designing my final analysis and its dependencies.
+Let's start with some background on Trace Compass. It allows you to build analyses that depend on trace events, the output of other analyses, or both. Some analyses are used to create views to directly display processed data. However, we can use them as models that can be queried by other models or analyses. This abstraction was very useful when designing my final analysis and its dependencies.
 
 The first analysis is the connections model. Using the `new_connection` events from `tracetools`, it creates a list of connections between two nodes on a certain topic and includes information about the endpoints.
 
@@ -108,13 +108,13 @@ These events always include a reference to the associated message, so it can hel
     caption="View showing the state of a publisher queue. At this timestamp (thin blue vertical line), the first message is removed from the queue and sent to the subscriber."
 %}
 
-The third analysis is for network packet exchange. This is the only analysis that needs kernel events: `net_dev_queue` for packet queuing and `netif_receive_skb` for packet reception. Fortunately, Trace Compass already does this! It matches sent/queued and received packets. I only had to filter out `SYN`/`FIN`/`ACK` packets and those which were not associated with a known ROS connection. Then, from a node name, a topic name, and a timestamp at which a message was published, we can figure out when it went through the network, and link it to a message that's received by the subscription.
+The third analysis is for network packet exchange. This is the only analysis that needs kernel events: `net_dev_queue` for packet queuing and `netif_receive_skb` for packet reception. Fortunately, Trace Compass already does this! It matches sent and received packets. I only had to filter out `SYN`/`FIN`/`ACK` packets and those which were not associated with a known ROS connection. Then, from a node name, a topic name, and a timestamp at which a message was published, we can figure out when it went through the network, and link it to a message received by the subscription.
 
 Finally, we can put everything together! The analysis uses the above analyses to reconstruct and display a message's path accross queues, callbacks, and the network!
 
 ## Results/example
 
-To illustrate this, I wrote a simple "pipeline" test case. A first node periodically publishes on a topic. A second node does some processing and re-publishes them on another topic. A third node does the same, and a fourth and last node prints the message's content.
+To illustrate this, I wrote a simple "pipeline" test case. A first node periodically publishes messages on a topic. A second node does some processing and re-publishes them on another topic. A third node does the same, and a fourth and last node prints the contents of a message.
 
 {% include figure.html
     url="/assets/img/tc4ros/testcase_graph.png"
@@ -142,7 +142,7 @@ There it is! Some sections are hard make out, so we can zoom in.
     caption="Zoomed in."
 %}
 
-We can see the three main states: publisher queue, subscriber queue, and subscriber callback. Of course, the transition represented by the darker arrows between the publisher queue and subscriber queue states includes the network transmission.
+We can see three main states: publisher queue, subscriber queue, and subscriber callback. Of course, the transition represented by the darker arrows between the publisher queue and subscriber queue states includes the network transmission.
 
 However, going back to the original perspective, two states clearly stand out. The first (green) state represents the time spent in the first node's publisher queue, waiting for other nodes to be ready in order to transmit the message. The biggest state, in orange, represents the time spent in a callback inside the third node. We can hover over the state to get more info.
 
@@ -151,7 +151,7 @@ However, going back to the original perspective, two states clearly stand out. T
     caption="Hovering to get more information."
 %}
 
-We can see that the message spent around 100 milliseconds in the callback before the next related message was sent to the following publisher queue. In this case, it can be explained by looking at [this node's source code](https://github.com/christophebedard/tracecompass_ros_testcases/blob/melodic-devel/tracecompass_ros_testcases/src/nodes_pipeline/node_m.cpp)!
+We can see that the message spent around 100 milliseconds in the callback before the next related message was sent to the following publisher queue. In this case, it can be explained by looking at [the node's source code](https://github.com/christophebedard/tracecompass_ros_testcases/blob/melodic-devel/tracecompass_ros_testcases/src/nodes_pipeline/node_m.cpp)!
 
 {% highlight cpp %}
 void callbackFunction(const std_msgs::String::ConstPtr& msg) {
@@ -180,7 +180,7 @@ First and foremost, other than not supporting UDP and not explicitly supporting 
 
 To link a message between two endpoints, this selects the first corresponding TCP packet that is queued (`net_dev_queue`) after the `subscriber_link_message_write` event, and then selects the next `subscription_message_queued` event after the matching `netif_receive_skb` event. This assumption about the sequence of events might not be always valid. Also, it has not been tested with messages bigger than the maximum payload size of a TCP packet.
 
-Furthermore, callbacks were considered as the only possible link between two messages (received & published). Nodes might deal with callbacks and message publishing separately, e.g. to publish at a fixed rate independently of the messages received. In the same sense, message flows do not have to be linear! In order words, one incoming message can turn into multiple outgoing messages.
+Furthermore, callbacks were considered as the only possible link between two messages (received & published). Nodes might deal with callbacks and message publishing separately, e.g. when publishing at a fixed rate independently of the received messages. In the same sense, message flows do not have to be linear! In order words, one incoming message can turn into multiple outgoing messages.
 
 Also, Trace Compass can easily aggregate traces from multiple hosts. This is very relevant for robotics systems, and thus would be a great avenue to explore.
 
