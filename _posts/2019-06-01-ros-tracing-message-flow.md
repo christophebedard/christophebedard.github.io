@@ -90,7 +90,7 @@ We also need to build a model of the publisher and subscriber queues. To achieve
 
 Finally, we need information on network packet exchanges. Although this isn't really necessary for this kind of analysis, it allows us to reliably link a message that gets published to a message that gets received by the subscriber. This is good when building a robust analysis, and it paves the way for a future critical path analysis based on this message flow analysis.
 
-This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this. It saves us a lot of disk space, since enabling many events can generate multiple gigabytes of trace data, even when tracing for only a few seconds!
+This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this. It saves us a lot of disk space, since enabling many events can generate multiple gigabytes of trace data, even when tracing for only a few seconds! Also, as the rate of generated events increases, the overhead also increases. More resources have to be allocated to the buffers to properly process those events, otherwise they can get [discarded or overwritten](https://lttng.org/docs/#doc-channel).
 
 #### Method
 {: .no_toc}
