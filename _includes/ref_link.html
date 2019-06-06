@@ -1,0 +1,2 @@
+{% assign start = include.start | times: 1 %}{% assign end = include.end | times: 1 %}
+[{% for num in (start .. end) %}<a href="#{{ num }}">{{ num }}</a>{% if num != end %}, {% endif %}{% endfor %}]
