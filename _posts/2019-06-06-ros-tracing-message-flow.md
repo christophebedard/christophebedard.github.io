@@ -13,7 +13,7 @@ comments: false
 %}
 
 {% include tl-dr.html
-    content="Tracing is a very powerful tool for software development, especially in robotics. Using Trace Compass and existing ROS instrumentation, I built an analysis that can show the path of a message through a ROS stack. This work can serve as a proof-of-concept for future endeavors."
+    content="Tracing is a very powerful tool for software development, especially in robotics. Using Trace Compass and existing ROS instrumentation, I built an analysis that can show the path of a message through a ROS stack. This work can serve as a proof-of-concept for future endeavours."
 %}
 
 1. TOC
@@ -181,7 +181,7 @@ void callbackFunction(const std_msgs::String::ConstPtr& msg) {
 
 In conclusion, tracing is a very powerful tool for robotics software development. Lack of determinism was identified as a symptom, and timing was chosen as an analysis topic.
 
-Using existing ROS instrumentation, I worked towards providing insight into the timewise execution of a ROS software stack. The result, a Trace Compass analysis for ROS, can serve as a proof-of-concept for future endeavors.
+Using existing ROS instrumentation, I worked towards providing insight into the timewise execution of a ROS software stack. The result, a Trace Compass analysis for ROS, can serve as a proof-of-concept for future endeavours.
 
 ## Future work
 
