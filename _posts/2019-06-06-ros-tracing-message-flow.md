@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Message Flow Analysis for ROS Through Tracing"
-date: 2019-06-01
+date: 2019-06-06
 excerpt: "An overview of my project on Trace Compass & ROS"
 tags: [ROS, tracing, Trace Compass, analysis, UPIR]
 comments: false
