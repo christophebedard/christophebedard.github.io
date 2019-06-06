@@ -208,7 +208,7 @@ Finally, as mentioned previously, the message flow analysis could be extended to
 
 This project was done as part of the [UPIR](https://www.polymtl.ca/aide-financiere/bourses/bourses-upir-unite-de-participation-et-dinitiation-la-recherche) program for undergraduate research at Polytechnique Montréal, and was supervised by Michel Dagenais. I thank him for his great input!
 
-I would also like to thank Matthew Khouzam, Geneviève Bastien, and Ingo Lütkebohle.
+I would also like to thank Matthew Khouzam and Geneviève Bastien for their help and advice, and Ingo Lütkebohle for his commentary on the need for tracing in robotics.
 
 ## References
 
