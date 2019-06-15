@@ -29,6 +29,7 @@ sass:
 #disqus_shortname:   taylantatli
 
 # Social
+social-share:       false
 # if you don't have any of social below, comment the line.
 google:
   #plus:            #username
