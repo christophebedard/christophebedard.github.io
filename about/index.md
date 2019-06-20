@@ -6,7 +6,7 @@ date: 2018-06-09
 comments: false
 ---
 
-I'm Christophe Bédard, an undergraduate Computer Engineering student at Polytechnique Montréal who is passionate about robotics and new technologies. I also have a B.Eng. in mechanical engineering.
+I'm Christophe Bédard, an undergraduate Computer Engineering student at Polytechnique Montréal who is passionate about robotics and new technologies. I also have a B.Eng. in Mechanical Engineering.
 
 From 2014 to 2019, I was involved in [Élikos](https://elikos.polymtl.ca/), an engineering student design team working on autonomous drones. We competed in mission 7 of the [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/) at Georgia Tech in Atlanta, Georgia. The goal was to autonomously interact with roombas on the ground in order to guide them to a goal line. That had to be done while avoiding obstacles and without any external position sensor. In 2015, with a custom platform, my team ranked first in North America for demonstrating autonomous tracking and following of a ground robot. In 2016, we won the award for Most Innovative Vehicle and ranked second. I led the team from 2017 to 2019.
 
