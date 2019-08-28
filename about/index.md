@@ -14,11 +14,14 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
 
 ### Working experience
 
-* 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany) - I worked on open source [tracing tools](https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing) and instrumentation for [ROS 2](https://index.ros.org/doc/ros2/), including [trace data analysis tools](https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis)
+* 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
+  I worked on open source [tracing tools](https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing) and instrumentation for [ROS 2](https://index.ros.org/doc/ros2/), including [trace data analysis tools](https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis).
 
-* 2018 - **Open Source Developer, Ericsson** (Montréal, Canada) - I worked on [Trace Compass](http://tracecompass.org/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard))
+* 2018 - **Open Source Developer, Ericsson** (Montréal, Canada)  
+  I worked on [Trace Compass](http://tracecompass.org/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
 
-* 2017 - **Intern, [MIST Lab](http://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada) - I helped demonstrate swarming behaviour on drones and ground vehicles 
+* 2017 - **Intern, [MIST Lab](http://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
+  I helped demonstrate swarming behaviour on drones and ground vehicles.
 
 More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
