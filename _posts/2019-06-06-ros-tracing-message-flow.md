@@ -10,6 +10,7 @@ comments: false
 {% include figure.html
     url="/assets/img/tc4ros/result.png"
     caption="Outcome of this project: message flow analysis for ROS using Trace Compass."
+    alt="project overview"
 %}
 
 {% include tl-dr.html
@@ -104,6 +105,7 @@ The first analysis is the connections model. Using the `new_connection` events f
 {% include figure.html
     url="/assets/img/tc4ros/new_connection_events.png"
     caption="Some <code class='highlighter-rouge'>new_connection</code> events. Highlighted are two events belonging to the same connection, on opposite endpoints."
+    alt="examples of new_connection events"
 %}
 
 Another analysis is created to model queues over time. This uses three tracepoints, also from `tracetools`:
@@ -117,6 +119,7 @@ These events always include a reference to the associated message, so it can hel
 {% include figure.html
     url="/assets/img/tc4ros/queues_view.png"
     caption="View showing the state of a publisher queue. At this timestamp (thin blue vertical line), the first message is removed from the queue and sent to the subscriber."
+    alt="view showing the state of a publisher queue"
 %}
 
 The third analysis is for network packet exchange. This is the only analysis that needs kernel events: `net_dev_queue` for packet queuing and `netif_receive_skb` for packet reception. Fortunately, Trace Compass already does this! It matches sent and received packets. I only had to filter out `SYN`/`FIN`/`ACK` packets and those which were not associated with a known ROS connection. Then, from a node name, a topic name, and a timestamp at which a message was published, we can figure out when it went through the network, and link it to a message received by the subscription.
@@ -130,6 +133,7 @@ To illustrate this, I wrote a simple "pipeline" test case. A first node periodic
 {% include figure.html
     url="/assets/img/tc4ros/testcase_graph.png"
     caption="Graph generated using <code class='highlighter-rouge'>rqt_graph</code>."
+    alt="rqt_graph example"
 %}
 
 From the view showing queues over time, the user can select an individual message by clicking on it, then hitting the _Follow the selected message_ button.
@@ -137,6 +141,7 @@ From the view showing queues over time, the user can select an individual messag
 {% include figure.html
     url="/assets/img/tc4ros/result_select_message.png"
     caption="Message selection. Note that this is the first node in the pipeline, and that, at this moment, the other nodes are not active. Therefore, since latching is enabled, the publisher's queue only keeps the most recent message."
+    alt="message selection result"
 %}
 
 The message flow analysis -- and all its dependencies -- are run. The output can then be viewed in the corresponding view.
@@ -144,6 +149,7 @@ The message flow analysis -- and all its dependencies -- are run. The output can
 {% include figure.html
     url="/assets/img/tc4ros/result_analysis_initial.png"
     caption="Analysis result."
+    alt="analysis result"
 %}
 
 There it is! Some sections are hard make out, so we can zoom in.
@@ -151,6 +157,7 @@ There it is! Some sections are hard make out, so we can zoom in.
 {% include figure.html
     url="/assets/img/tc4ros/result_analysis_initial_zoom.png"
     caption="Zoomed in."
+    alt="zoomed in"
 %}
 
 We can see three main states: publisher queue, subscriber queue, and subscriber callback. Of course, the transition represented by the darker arrows between the publisher queue and subscriber queue states includes the network transmission.
@@ -160,6 +167,7 @@ However, going back to the original perspective, two states clearly stand out. T
 {% include figure.html
     url="/assets/img/tc4ros/result_analysis_hover.png"
     caption="Hovering to get more information."
+    alt="hover feature example"
 %}
 
 We can see that the message spent around 100 milliseconds in the callback before the next related message was sent to the following publisher queue. In this case, it can be explained by looking at [the node's source code](https://github.com/christophebedard/tracecompass_ros_testcases/blob/melodic-devel/tracecompass_ros_testcases/src/nodes_pipeline/node_m.cpp)!
