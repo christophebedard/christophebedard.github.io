@@ -14,6 +14,9 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
 
 ### Working experience
 
+* 2019 - **Platform/RTOS Intern, Apex.AI** (Palo Alto, United States)  
+  I worked on integrating tracing into [Apex.OS](https://www.apex.ai/products), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
+
 * 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
   I worked on open source [tracing tools](https://gitlab.com/micro-ROS/ros_tracing/ros2_tracing) and instrumentation for [ROS 2](https://index.ros.org/doc/ros2/), including [trace data analysis tools](https://gitlab.com/micro-ROS/ros_tracing/tracetools_analysis).
 
