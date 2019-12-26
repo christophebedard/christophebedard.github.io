@@ -64,7 +64,7 @@ However, all of the tools or solutions mentioned above cannot provide a view of 
 
 The `tracetools` [package](https://github.com/bosch-robotics-cr/tracetools) uses [LTTng](https://lttng.org/) to instrument ROS for tracing. However, it does not offer analysis tools.
 
-Trace Compass offers a [control flow view](https://github.com/tuxology/tracevizlab/tree/master/labs/101-trace-navigation-in-tracecompass), showing the state of threads over time. By selecting one particular thread, a user can launch a [critical path analysis](https://github.com/tuxology/tracevizlab/tree/master/labs/102-tracing-wget-critical-path).
+Trace Compass offers a [control flow view](https://github.com/tuxology/tracevizlab/tree/master/labs/101-analyze-system-trace-in-tracecompass#task-2-navigate-in-time-graph-views), showing the state of threads over time. By selecting one particular thread, a user can launch a [critical path analysis](https://github.com/tuxology/tracevizlab/tree/master/labs/102-tracing-wget-critical-path).
 
 ## Message flow analysis
 
