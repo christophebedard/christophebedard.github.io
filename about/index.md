@@ -28,7 +28,6 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
 
 More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
-
 ### Awards
 
 * 2018 - **Scholarship for Introduction to Research (UPIR)**, Polytechnique Montréal
