@@ -28,6 +28,14 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
 
 More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
+### Education
+
+* 2020-2021 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal
+
+* 2017-2020 - **B.Eng., Computer Engineering**, Polytechnique Montréal
+
+* 2013-2017 - **B.Eng., Mechanical Engineering**, Polytechnique Montréal
+
 ### Awards
 
 * 2018 - **Scholarship for Introduction to Research (UPIR)**, Polytechnique Montréal
