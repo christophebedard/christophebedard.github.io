@@ -14,7 +14,7 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
 
 ### Working experience
 
-* 2019-2020 - **Platform/RTOS Intern, Apex.AI** (Palo Alto, United States)  
+* 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, United States)  
   I worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
 
 * 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
