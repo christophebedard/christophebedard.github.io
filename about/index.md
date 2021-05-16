@@ -43,4 +43,4 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 * 2018 - **Scholarship for Student Involvement**, Warner Bros. Games
 
-* 2016 - **Most Innovative Vehicle Award**, International Aerial Robotics Competition
+* 2016 - **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/)
