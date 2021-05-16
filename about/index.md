@@ -2,7 +2,7 @@
 layout: page
 title: About me
 tags: [about]
-date: 2018-06-09
+date: 2021-05-16
 comments: false
 ---
 
@@ -39,8 +39,12 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 ### Awards
 
+* 2021 - **Da Vinci Scholarship**, Fondation et Alumni de Polytechnique
+
 * 2018 - **Scholarship for Introduction to Research (UPIR)**, Polytechnique Montréal
 
-* 2018 - **Scholarship for Student Involvement**, Warner Bros. Games
+* 2018 - **Warner Bros. Games Scholarship for Student Involvement**, Warner Bros. Games
+
+* 2018 - **Scholarship for Student Involvement**, Aramark
 
 * 2016 - **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/)
