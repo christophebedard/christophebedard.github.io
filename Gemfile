@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.2.1"
+gem "jekyll"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
 
-gem 'github-pages', group: :jekyll_plugins
+gem "github-pages", "~> 214", group: :jekyll_plugins
 
 gem 'html-proofer'
