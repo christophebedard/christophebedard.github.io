@@ -19,7 +19,7 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
   I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
 
 * 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
-  I worked on open source [tracing tools](https://gitlab.com/ros-tracing/ros2_tracing) and instrumentation for [ROS 2](https://index.ros.org/doc/ros2/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
+  I worked on open source [tracing tools](https://gitlab.com/ros-tracing/ros2_tracing) and instrumentation for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
 
 * 2018 - **Open Source Developer, Ericsson** (Montréal, Canada)  
   I worked on [Trace Compass](http://tracecompass.org/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
