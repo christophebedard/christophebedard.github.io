@@ -42,7 +42,7 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 * 2021 - **Da Vinci Scholarship**, Fondation et Alumni de Polytechnique
 
-* 2018 - **Scholarship for Introduction to Research (UPIR)**, Polytechnique Montréal
+* 2018 - **Scholarship for Introduction to [Research](/ros-tracing-message-flow/) (UPIR)**, Polytechnique Montréal
 
 * 2018 - **Warner Bros. Games Scholarship for Student Involvement**, Warner Bros. Games
 
