@@ -31,7 +31,8 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 ### Education
 
-* 2020-2022 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal
+* 2020-2022 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal  
+  Doing research on tracing [ROS 2](https://docs.ros.org/en/rolling/) at [DORSAL lab](https://www.dorsal.polymtl.ca/).
 
 * 2017-2020 - **B.Eng., Computer Engineering**, Polytechnique Montréal
 
