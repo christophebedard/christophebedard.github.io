@@ -31,7 +31,7 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 ### Education
 
-* 2020-2021 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal
+* 2020-2022 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal
 
 * 2017-2020 - **B.Eng., Computer Engineering**, Polytechnique Montréal
 
