@@ -22,7 +22,7 @@ My other involvements include the _Association Étudiante de Polytechnique_, the
   I worked on open source [tracing tools](https://gitlab.com/ros-tracing/ros2_tracing) and instrumentation for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
 
 * 2018 - **Open Source Developer, Ericsson** (Montréal, Canada)  
-  I worked on [Trace Compass](http://tracecompass.org/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
+  I worked on [Trace Compass](https://www.eclipse.org/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
 
 * 2017 - **Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)
   I helped demonstrate swarming behaviour on drones and ground vehicles.

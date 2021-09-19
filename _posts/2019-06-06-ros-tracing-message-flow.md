@@ -42,7 +42,7 @@ Its main feature is probably the implementation of the publish-subscribe pattern
 #### Trace Compass
 {: .no_toc}
 
-[Trace Compass](http://tracecompass.org) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
+[Trace Compass](https://www.eclipse.org/tracecompass/) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
 
 ### Topic
 
