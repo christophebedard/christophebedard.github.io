@@ -3,7 +3,7 @@ title:              Christophe Bédard
 bio:                "Computer Engineering master's student @ Polytechnique Montréal"
 description:        "Christophe Bédard's blog."
 reading_time:       true
-words_per_minute:   200
+words_per_minute:   250
 logo:               'assets/img/avatar.png'
 background:         'assets/img/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
