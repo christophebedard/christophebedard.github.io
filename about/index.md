@@ -14,12 +14,12 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
-* 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, United States)  
-  I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of a safety certification process.  
+* 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+  I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of an ISO 26262 safety certification process.  
   I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
 
 * 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
-  I worked on open source [tracing tools](https://gitlab.com/ros-tracing/ros2_tracing) and instrumentation for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
+  I worked on open source [tracing tools and instrumentation](https://gitlab.com/ros-tracing/ros2_tracing) for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
 
 * 2018 - **Open Source Developer, Ericsson** (Montréal, Canada)  
   I worked on [Trace Compass](https://www.eclipse.org/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
