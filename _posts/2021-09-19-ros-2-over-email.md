@@ -170,14 +170,14 @@ I looked over the code to see how it worked and then I looked at the [ROS 2 IDL 
 C structures for message arrays make this task simple -- at the expense of being more complex to use -- since they keep track of size and capacity.
 C++ containers make it complicated!
 
-For example, how can you [figure out the size of a `std::vector<T>`](https://github.com/christophebedard/dynamic_message_introspection/blob/35f1977fc61eea8f41b5c59af8df12ab740f2525/dynmsg/src/message_reading_cpp.cpp#L519-L520) if you know the size of the contained type, `sizeof(T)`, but *only* have a `void *` to it?
+For example, how can you [figure out the size of a `std::vector<T>`](https://github.com/christophebedard/dynamic_message_introspection/blob/4afd27793d20731a758eb868459a8b1db6186e41/dynmsg/src/message_reading_cpp.cpp#L519-L520) if you know the size of the contained type, `sizeof(T)`, but *only* have a `void *` to it?
 This is the case for unbounded dynamic arrays of a non-built-in type, like an [array of `PointField` in a `PointCloud2` message](https://github.com/ros2/common_interfaces/blob/a3a0dde2ba184b01cdc59a3003728906de3240a9/sensor_msgs/msg/PointCloud2.msg#L19).
 The answer is: by ~~Googling it~~ knowing implementation details!
 A `std::vector` object simply contains three pointers: begin, end, and end capacity.
-Since the elements are stored [contiguously](https://en.cppreference.com/w/cpp/named_req/ContiguousContainer), size is simply [`(end - begin) / sizeof(T)`](https://github.com/christophebedard/dynamic_message_introspection/blob/35f1977fc61eea8f41b5c59af8df12ab740f2525/dynmsg/src/vector_utils.cpp#L49)!
+Since the elements are stored [contiguously](https://en.cppreference.com/w/cpp/named_req/ContiguousContainer), size is simply [`(end - begin) / sizeof(T)`](https://github.com/christophebedard/dynamic_message_introspection/blob/4afd27793d20731a758eb868459a8b1db6186e41/dynmsg/src/vector_utils.cpp#L49-L59)!
 Fun fact: that trick doesn't work with `std::vector<bool>`, because [its implementation is different](https://en.cppreference.com/w/cpp/container/vector_bool), but that's not a problem here.
 
-I [forked the package](https://github.com/christophebedard/dynamic_message_introspection/tree/add-cpp-support-and-refactor), added support for C++ messages, made the message<-->YAML conversion symmetrical, and refactored the repository/packages a bit.
+I forked the package, [added support for C++ messages, made the message<-->YAML conversion symmetrical, and refactored the repository/packages a bit](https://github.com/osrf/dynamic_message_introspection/pull/15).
 Below is a simple example of a C++ `std_msgs/Header` message and the corresponding YAML representation.
 
 <div style="display: flex; flex-wrap: wrap">
@@ -394,7 +394,8 @@ However, even if I received multiple facepalm emojis 🤦‍♂️ from a friend
 * rmw_email: [github.com/christophebedard/rmw_email](https://github.com/christophebedard/rmw_email)
   * `email` design document: [christophebedard.com/rmw_email/design/email/](https://christophebedard.com/rmw_email/design/email/)
   * `email` API documentation: [christophebedard.com/rmw_email/api/email/](https://christophebedard.com/rmw_email/api/email/)
-* my fork and branch of dynamic_message_introspection with support for C++ messages and symmetrical conversion: [github.com/christophebedard/dynamic_message_introspection/tree/add-cpp-support-and-refactor](https://github.com/christophebedard/dynamic_message_introspection/tree/add-cpp-support-and-refactor)
+* dynamic_message_introspection: [github.com/osrf/dynamic_message_introspection](https://github.com/osrf/dynamic_message_introspection)
+  * the PR with changes mentioned in this post has now been merged: [github.com/osrf/dynamic_message_introspection/pull/15](https://github.com/osrf/dynamic_message_introspection/pull/15)
 
 ## References
 
