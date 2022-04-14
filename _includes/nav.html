@@ -44,6 +44,9 @@
                     {% if site.google.scholar %}<li>
                         <a href="https://scholar.google.com/citations?user={{ site.google.scholar }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-fw ai-google-scholar"></i> Google Scholar</a>
                     </li>{% endif %}
+                    {% if site.orcid %}<li>
+                        <a href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-fw ai-orcid"></i> ORCID</a>
+                    </li>{% endif %}
                     {% if site.stackoverflow %}<li>
                         <a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
                     </li>{% endif %}
