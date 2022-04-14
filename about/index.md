@@ -12,6 +12,12 @@ From 2014 to 2019, I was involved in [Élikos](https://elikos.ca/), an engineeri
 
 My other involvements include the [_Association des sociétés techniques de Polytechnique_](https://astp.polymtl.ca/), the _Association Étudiante de Polytechnique_, as well as the _Fonds d'Appui aux Initiatives Étudiantes_, which awards grants to innovative student projects.
 
+### Publications
+
+#### Preprints
+
+* **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ros 2,"](https://arxiv.org/pdf/2201.00393.pdf) *arXiv preprint arXiv:2201.00393*, 2022.
+
 ### Working experience
 
 * 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
