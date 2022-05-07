@@ -177,6 +177,8 @@ A `std::vector` object simply contains three pointers: begin, end, and end capac
 Since the elements are stored [contiguously](https://en.cppreference.com/w/cpp/named_req/ContiguousContainer), size is simply [`(end - begin) / sizeof(T)`](https://github.com/christophebedard/dynamic_message_introspection/blob/4afd27793d20731a758eb868459a8b1db6186e41/dynmsg/src/vector_utils.cpp#L49-L59)!
 Fun fact: that trick doesn't work with `std::vector<bool>`, because [its implementation is different](https://en.cppreference.com/w/cpp/container/vector_bool), but that's not a problem here.
 
+> **Update**: this workaround is not actually needed. [See below](#update-2022-05-07).
+
 I forked the package, [added support for C++ messages, made the message<-->YAML conversion symmetrical, and refactored the repository/packages a bit](https://github.com/osrf/dynamic_message_introspection/pull/15).
 Below is a simple example of a C++ `std_msgs/Header` message and the corresponding YAML representation.
 
@@ -396,6 +398,11 @@ However, even if I received multiple facepalm emojis 🤦‍♂️ from a friend
   * `email` API documentation: [christophebedard.com/rmw_email/api/email/](https://christophebedard.com/rmw_email/api/email/)
 * dynamic_message_introspection: [github.com/osrf/dynamic_message_introspection](https://github.com/osrf/dynamic_message_introspection)
   * the PR with changes mentioned in this post has now been merged: [github.com/osrf/dynamic_message_introspection/pull/15](https://github.com/osrf/dynamic_message_introspection/pull/15)
+
+## Update (2022-05-07)
+
+It turns out that there is no need to use hacky ways to get the size of an array of a non-built-in type: the type support introspection tools include functions that provide this information for a given type.
+See: [github.com/osrf/dynamic_message_introspection/pull/16](https://github.com/osrf/dynamic_message_introspection/pull/16).
 
 ## References
 
