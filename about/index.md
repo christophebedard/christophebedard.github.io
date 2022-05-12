@@ -14,9 +14,12 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Publications
 
-#### Preprints
+### Journal
 
-* **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ros 2,"](https://arxiv.org/pdf/2201.00393.pdf) *arXiv preprint arXiv:2201.00393*, 2022.
+* **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2,"](https://ieeexplore.ieee.org/document/9772997) *IEEE Robotics and Automation Letters*, 2022. ([PDF](https://arxiv.org/pdf/2201.00393.pdf))
+
+#### Preprint
+
 * **C. Bédard**, P.-Y. Lajoie, G. Beltrame, and M. Dagenais, ["Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems,"](https://arxiv.org/pdf/2204.10208.pdf), *arXiv preprint arXiv:2204.10208*, 2022.
 * P.-Y. Lajoie, **C. Bédard**, and G. Beltrame, ["Analyze, Debug, Optimize: Real-Time Tracing for Perception and Mapping Systems in ROS 2,"](https://arxiv.org/pdf/2204.11778.pdf) *arXiv preprint arXiv:2204.11778*, 2022.
 
