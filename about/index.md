@@ -16,7 +16,7 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Journal
 
-* **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2,"](https://ieeexplore.ieee.org/document/9772997) *IEEE Robotics and Automation Letters*, 2022. ([PDF](https://arxiv.org/pdf/2201.00393.pdf))
+* **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2,"](https://doi.org/10.1109/LRA.2022.3174346) *IEEE Robotics and Automation Letters*, vol. 7, no. 3, pp. 6511–6518, 2022. ([PDF](https://arxiv.org/pdf/2201.00393.pdf))
 
 ### Workshop
 
