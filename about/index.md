@@ -2,13 +2,21 @@
 layout: page
 title: About me
 tags: [about]
-date: 2021-05-16
+date: 2022-06-28
 comments: false
 ---
 
-I'm Christophe <a title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</a>, a master's student in Computer Engineering at Polytechnique Montréal who is passionate about robotics and systems performance. My research interests include performance analysis & debugging of distributed systems in robotics. I have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
+I'm Christophe <a title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</a>, a master's student in Computer Engineering at Polytechnique Montréal who is passionate about robotics and systems performance.
+My research interests include performance analysis & debugging of distributed systems in robotics.
+I have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
 
-From 2014 to 2019, I was involved in [Élikos](https://elikos.ca/), an engineering student design team working on autonomous drones. We competed in mission 7 of the [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA. The goal was to autonomously interact with roombas on the ground in order to guide them to a goal line. That had to be done while avoiding obstacles and without any external position sensor. In 2015, with a custom platform, my team ranked first in North America for demonstrating autonomous tracking and following of a ground robot. In 2016, we won the award for Most Innovative Vehicle and ranked second. I led the team from 2017 to 2019.
+From 2014 to 2019, I was involved in [Élikos](https://elikos.ca/), an engineering student design team working on autonomous drones.
+We competed in mission 7 of the [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA.
+The goal was to autonomously interact with roombas on the ground in order to guide them to a goal line.
+That had to be done while avoiding obstacles and without any external position sensor.
+In 2015, with a custom platform, my team ranked first in North America for demonstrating autonomous tracking and following of a ground robot.
+In 2016, we won the award for Most Innovative Vehicle and ranked second.
+I led the team from 2017 to 2019.
 
 My other involvements include the [_Association des sociétés techniques de Polytechnique_](https://astp.polymtl.ca/), the _Association Étudiante de Polytechnique_, as well as the _Fonds d'Appui aux Initiatives Étudiantes_, which awards grants to innovative student projects.
 
