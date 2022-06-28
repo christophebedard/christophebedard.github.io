@@ -6,9 +6,9 @@ date: 2022-06-28
 comments: false
 ---
 
-I'm Christophe <a title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</a>, a master's student in Computer Engineering at Polytechnique Montréal who is passionate about robotics and systems performance.
-My research interests include performance analysis & debugging of distributed systems in robotics.
-I have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
+I'm Christophe <a title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</a>, an M.A.Sc. graduate in Computer Engineering from Polytechnique Montréal who is passionate about robotics and systems performance.
+My interests include performance analysis & debugging of distributed systems in robotics.
+I also have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
 
 From 2014 to 2019, I was involved in [Élikos](https://elikos.ca/), an engineering student design team working on autonomous drones.
 We competed in mission 7 of the [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA.
@@ -36,6 +36,9 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
+* 2022- - **Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+  I work on performance analysis.
+
 * 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
   I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of an ISO 26262 safety certification process.  
   I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
@@ -54,7 +57,8 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 ### Education
 
 * 2020-2022 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal  
-  Doing research on tracing [ROS 2](https://docs.ros.org/en/rolling/) at [DORSAL lab](https://www.dorsal.polymtl.ca/).
+  Did research on tracing [ROS 2](https://docs.ros.org/en/rolling/) at [DORSAL lab](https://www.dorsal.polymtl.ca/).
+  See [publications](#publications).
 
 * 2017-2020 - **B.Eng., Computer Engineering**, Polytechnique Montréal
 
