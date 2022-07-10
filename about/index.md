@@ -36,42 +36,42 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
-* 2022- - **Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+* 2022--present --- **Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
   I work on performance analysis.
 
-* 2019-2020 - **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+* 2019--2020 --- **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
   I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of an ISO 26262 safety certification process.  
-  I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract run-time information about all layers of the software stack.
+  I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract runtime information about all layers of the software stack.
 
-* 2019 - **Intern/Praktikant, Bosch** (Renningen, Germany)  
+* 2019 --- **Intern/Praktikant, Bosch** (Renningen, Germany)  
   I worked on open source [tracing tools and instrumentation](https://gitlab.com/ros-tracing/ros2_tracing) for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
 
-* 2018 - **Open Source Developer, Ericsson** (Montréal, Canada)  
+* 2018 --- **Open Source Developer, Ericsson** (Montréal, Canada)  
   I worked on [Trace Compass](https://www.eclipse.org/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
 
-* 2017 - **Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
+* 2017 --- **Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
   I helped demonstrate swarming behaviour on drones and ground vehicles.
 
 More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 ### Education
 
-* 2020-2022 - **M.A.Sc., Computer Engineering**, Polytechnique Montréal  
+* 2020--2022 --- **M.A.Sc., Computer Engineering**, Polytechnique Montréal  
   Did research on tracing [ROS 2](https://docs.ros.org/en/rolling/) at [DORSAL lab](https://www.dorsal.polymtl.ca/).
   See [publications](#publications).
 
-* 2017-2020 - **B.Eng., Computer Engineering**, Polytechnique Montréal
+* 2017--2020 --- **B.Eng., Computer Engineering**, Polytechnique Montréal
 
-* 2013-2017 - **B.Eng., Mechanical Engineering**, Polytechnique Montréal
+* 2013--2017 --- **B.Eng., Mechanical Engineering**, Polytechnique Montréal
 
 ### Awards
 
-* 2021 - **Da Vinci Scholarship**, Fondation et Alumni de Polytechnique
+* 2021 --- **Da Vinci Scholarship**, Fondation et Alumni de Polytechnique
 
-* 2018 - **Scholarship for Introduction to [Research](/ros-tracing-message-flow/) (UPIR)**, Polytechnique Montréal
+* 2018 --- **Scholarship for Introduction to [Research](/ros-tracing-message-flow/) (UPIR)**, Polytechnique Montréal
 
-* 2018 - **Warner Bros. Games Scholarship for Student Involvement**, Warner Bros. Games
+* 2018 --- **Warner Bros. Games Scholarship for Student Involvement**, Warner Bros. Games
 
-* 2018 - **Scholarship for Student Involvement**, Aramark
+* 2018 --- **Scholarship for Student Involvement**, Aramark
 
-* 2016 - **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/)
+* 2016 --- **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/)
