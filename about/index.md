@@ -32,7 +32,7 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 #### Preprint
 
-* **C. Bédard**, P.-Y. Lajoie, G. Beltrame, and M. Dagenais, ["Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems,"](https://arxiv.org/pdf/2204.10208.pdf), *arXiv preprint arXiv:2204.10208*, 2022.
+* **C. Bédard**, P.-Y. Lajoie, G. Beltrame, and M. Dagenais, ["Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems,"](https://arxiv.org/pdf/2204.10208.pdf) *arXiv preprint arXiv:2204.10208*, 2022.
 
 ### Working experience
 
