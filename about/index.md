@@ -25,7 +25,7 @@ My other involvements include the [_Association des sociétés techniques de Pol
 ### Journal
 
 * **C. Bédard**, I. Lütkebohle, and M. Dagenais, ["ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2,"](https://doi.org/10.1109/LRA.2022.3174346) *IEEE Robotics and Automation Letters*, vol. 7, no. 3, pp. 6511–6518, 2022. ([PDF](https://arxiv.org/pdf/2201.00393.pdf))
-* **C. Bédard**, P.-Y. Lajoie, G. Beltrame, and M. Dagenais, ["Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems,"](https://doi.org/10.1016/j.robot.2022.104361) *Robotics and Autonomous Systems*, 2023. ([PDF](https://arxiv.org/pdf/2204.10208.pdf))
+* **C. Bédard**, P.-Y. Lajoie, G. Beltrame, and M. Dagenais, ["Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems,"](https://doi.org/10.1016/j.robot.2022.104361) *Robotics and Autonomous Systems*, vol. 161, p. 104361, 2023. ([PDF](https://arxiv.org/pdf/2204.10208.pdf))
 
 ### Workshop
 
