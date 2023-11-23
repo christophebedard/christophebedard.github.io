@@ -35,14 +35,14 @@ Finally, I will conclude and briefly talk about possible future work related to 
 #### ROS
 {: .no_toc}
 
-[Robot Operating System](http://www.ros.org/) (ROS) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
+[Robot Operating System](https://ros.org/) (ROS) is an open-source framework and a set of libraries and tools for robotics software development. Although it has "Operating System" in its name, it's not really an OS!
 
-Its main feature is probably the implementation of the publish-subscribe pattern. [Nodes](http://wiki.ros.org/ROS/Concepts), which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
+Its main feature is probably the implementation of the publish-subscribe pattern. [Nodes](https://wiki.ros.org/ROS/Concepts), which are modular "processes" designed to accomplish a specific task, can publish on, or subscribe to, one or more topics to send/receive messages. By launching multiple nodes (either from your own package or from a package someone else made), you can accomplish complex tasks!
 
 #### Trace Compass
 {: .no_toc}
 
-[Trace Compass](https://www.eclipse.org/tracecompass/) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
+[Eclipse Trace Compass](https://eclipse.dev/tracecompass/) is an open source [trace](https://github.com/tuxology/tracevizlab/tree/master/labs/001-what-is-tracing) viewer and analysis framework designed to solve performance issues. It supports many trace formats, and provides numerous useful analyses & views out of the box, such as the kernel resources and control flow views. Users can also use its API to implement their own analyses, which is what I did!
 
 ### Topic
 
@@ -56,9 +56,9 @@ A presentation at ROSCon 2017, titled ["Determinism in ROS -- or when things bre
 
 In this case, lack of determinism can be seen as merely a symptom. This led me to search for possible causes, one of which might be network/communications {% include ref_link.html start="1" end="5" %}. For latencies, which might lead to lack of determinism, critical path analyses can help identify the actual root cause {% include ref_link.html start="6" end="9" %}.
 
-As for tools, many are distributed along with ROS to help users and developers. [`rqt_graph`](http://wiki.ros.org/rqt_graph) can create a graph of publisher/subscriber relations between nodes. It can also show publishing rates. Similarly, the ROS CLI tools (e.g. `rostopic`) can help debug basic pub/sub issues.
+As for tools, many are distributed along with ROS to help users and developers. [`rqt_graph`](https://wiki.ros.org/rqt_graph) can create a graph of publisher/subscriber relations between nodes. It can also show publishing rates. Similarly, the ROS CLI tools (e.g. `rostopic`) can help debug basic pub/sub issues.
 
-Other tools are available. The `diagnostics` [package](http://wiki.ros.org/diagnostics) can collect diagnostics data for analysis. The `performance_test` [package](https://github.com/apexai/performance_test) for ROS 2 can test the performance of a communications middleware.
+Other tools are available. The `diagnostics` [package](https://wiki.ros.org/diagnostics) can collect diagnostics data for analysis. The `performance_test` [package](https://github.com/apexai/performance_test) for ROS 2 can test the performance of a communications middleware.
 
 However, all of the tools or solutions mentioned above cannot provide a view of the actual execution. Besides, the performance overhead of using higher-level log aggregators (e.g. as a ROS node) is non-negligible.
 
@@ -91,7 +91,7 @@ We also need to build a model of the publisher and subscriber queues. To achieve
 
 Finally, we need information on network packet exchanges. Although this isn't really necessary for this kind of analysis, it allows us to reliably link a message that gets published to a message that gets received by the subscriber. This is good when building a robust analysis, and it paves the way for a future critical path analysis based on this message flow analysis.
 
-This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this. It saves us a lot of disk space, since enabling many events can generate multiple gigabytes of trace data, even when tracing for only a few seconds! Also, as the rate of generated events increases, the overhead also increases. More resources have to be allocated to the buffers to properly process those events, otherwise they can get [discarded or overwritten](https://lttng.org/docs/#doc-channel).
+This requires us to trace both userspace (ROS) and kernel. Fortunately, we only have to enable 2 kernel events for this. It saves us a lot of disk space, since enabling many events can generate multiple gigabytes of trace data, even when tracing for only a few seconds! Also, as the rate of generated events increases, the overhead also increases. More resources have to be allocated to the buffers to properly process those events, otherwise they can get [discarded or overwritten](https://lttng.org/docs/v2.13/#doc-channel).
 
 #### Method
 {: .no_toc}

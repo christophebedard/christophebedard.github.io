@@ -6,12 +6,12 @@ date: 2023-01-04
 comments: false
 ---
 
-I'm Christophe <a title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</a>, an M.A.Sc. graduate in Computer Engineering from Polytechnique Montréal who is passionate about robotics and systems performance.
+I'm Christophe <span title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</span>, an M.A.Sc. graduate in Computer Engineering from Polytechnique Montréal who is passionate about robotics and systems performance.
 My interests include performance analysis & debugging of distributed systems in robotics.
 I also have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
 
-From 2014 to 2019, I was involved in [Élikos](https://elikos.ca/), an engineering student design team working on autonomous drones.
-We competed in mission 7 of the [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA.
+From 2014 to 2019, I was involved in Élikos, an engineering student design team working on autonomous drones.
+We competed in mission 7 of the [International Aerial Robotics Competition](http://aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA.
 The goal was to autonomously interact with roombas on the ground in order to guide them to a goal line.
 That had to be done while avoiding obstacles and without any external position sensor.
 In 2015, with a custom platform, my team ranked first in North America for demonstrating autonomous tracking and following of a ground robot.
@@ -49,12 +49,12 @@ My other involvements include the [_Association des sociétés techniques de Pol
   I worked on open source [tracing tools and instrumentation](https://gitlab.com/ros-tracing/ros2_tracing) for [ROS 2](https://docs.ros.org/en/rolling/), including [trace data analysis tools](https://gitlab.com/ros-tracing/tracetools_analysis).
 
 * 2018 --- **Open Source Developer, Ericsson** (Montréal, Canada)  
-  I worked on [Trace Compass](https://www.eclipse.org/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/#/q/owner:cbourquebedard)).
+  I worked on [Eclipse Trace Compass](https://eclipse.dev/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/q/owner:cbourquebedard)).
 
 * 2017 --- **Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
   I helped demonstrate swarming behaviour on drones and ground vehicles.
 
-More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
+More on [LinkedIn](https://linkedin.com/in/christophebourquebedard).
 
 ### Education
 
@@ -76,7 +76,7 @@ More on [LinkedIn](https://www.linkedin.com/in/christophebourquebedard/).
 
 * 2018 --- **Scholarship for Student Involvement**, Aramark
 
-* 2016 --- **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://www.aerialroboticscompetition.org/)
+* 2016 --- **Most Innovative Vehicle Award**, [International Aerial Robotics Competition](http://aerialroboticscompetition.org/)
 
 ---
 
