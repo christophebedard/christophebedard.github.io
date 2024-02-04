@@ -42,7 +42,8 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
-* 2022--present --- **Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+* 2024--present --- **Senior Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+  2022--2024 --- **Software Engineer**  
   I work on performance analysis.
 
 * 2019--2020 --- **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
