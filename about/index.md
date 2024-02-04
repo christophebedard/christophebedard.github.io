@@ -31,6 +31,10 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 * P.-Y. Lajoie, **C. Bédard**, and G. Beltrame, ["Analyze, Debug, Optimize: Real-Time Tracing for Perception and Mapping Systems in ROS 2,"](https://arxiv.org/pdf/2204.11778.pdf) *ICRA Workshop on Robotic Perception and Mapping: Emerging Techniques*, 2022. ([PDF](https://arxiv.org/pdf/2204.11778.pdf))
 
+#### Thesis
+
+* **C. Bourque Bédard**, ["Message Flow Analysis for Distributed Real-Time Control Systems,"](https://publications.polymtl.ca/10366/1/2022_ChristopheBourqueBedard.pdf) Master's thesis, Polytechnique Montréal, 2022. ([PDF](https://publications.polymtl.ca/10366/1/2022_ChristopheBourqueBedard.pdf))
+
 ### Talks
 
 * ROSCon 2023: "Improving Your Application's Algorithms and Optimizing Performance Using Trace Data" ([video](https://vimeo.com/879001159), [slides](https://roscon.ros.org/2023/talks/Improving_Your_Applications_Algorithms_and_Optimizing_Performance_Using_Trace_Data.pdf), [conference](https://roscon.ros.org/2023/))
@@ -60,7 +64,7 @@ More on [LinkedIn](https://linkedin.com/in/christophebourquebedard).
 
 * 2020--2022 --- **M.A.Sc., Computer Engineering**, Polytechnique Montréal  
   Did research on tracing [ROS 2](https://docs.ros.org/en/rolling/) at [DORSAL lab](https://www.dorsal.polymtl.ca/).
-  See [publications](#publications).
+  See [publications](#publications) and [thesis](#thesis).
 
 * 2017--2020 --- **B.Eng., Computer Engineering**, Polytechnique Montréal
 
