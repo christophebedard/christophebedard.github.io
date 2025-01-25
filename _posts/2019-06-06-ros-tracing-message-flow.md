@@ -152,7 +152,7 @@ The message flow analysis -- and all its dependencies -- are run. The output can
     alt="analysis result"
 %}
 
-There it is! Some sections are hard make out, so we can zoom in.
+There it is! Some sections are hard to make out, so we can zoom in.
 
 {% include figure.html
     url="/assets/img/tc4ros/result_analysis_initial_zoom.png"
