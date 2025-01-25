@@ -368,7 +368,7 @@ Finally, message filtering could be achieved by setting up rules in an email cli
 
 In conclusion, I presented [rmw_email](https://github.com/christophebedard/rmw_email), which contains a standalone middleware as well as a ROS 2 middleware implementation to exchange messages using emails.
 
-ROS 2's abstractions lead to additional complexity and overhead, but they're also quite powerful -- now you can worry about getting ~~SLAM~~ SPAM into your [Nav2](https://navigation.ros.org/) stack!
+ROS 2's abstractions lead to additional complexity and overhead, but they're also quite powerful -- now you can worry about getting ~~SLAM~~ SPAM into your [Nav2](https://docs.nav2.org/) stack!
 Ultimately, it's an interesting debate between users who benefit from and need that abstraction, and those who prefer to break it a little bit to have direct access to the underlying middleware.
 There might be a better middle ground to be found or even an alternative that allows both to coexist.
 Or perhaps the status quo is good for most users, and those who need a more specialized version of ROS 2 can just fork it, as some have done.
