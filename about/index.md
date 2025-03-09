@@ -56,7 +56,7 @@ My other involvements include the [_Association des sociétés techniques de Pol
 * 2018 --- **Open Source Developer, Ericsson** (Montréal, Canada)  
   I worked on [Eclipse Trace Compass](https://eclipse.dev/tracecompass/), an open source trace viewer and analysis framework ([contributions](https://git.eclipse.org/r/q/owner:cbourquebedard)).
 
-* 2017 --- **Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
+* 2017 --- **Robotics Research Intern, [MIST Lab](https://mistlab.ca/), Polytechnique Montréal** (Montréal, Canada)  
   I helped demonstrate swarming behaviour on drones and ground vehicles.
 
 More on [LinkedIn](https://linkedin.com/in/christophebourquebedard).
