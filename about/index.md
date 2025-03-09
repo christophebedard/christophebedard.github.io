@@ -73,6 +73,8 @@ More on [LinkedIn](https://linkedin.com/in/christophebourquebedard).
 
 ### Awards
 
+* 2022 -- [**Best master's thesis**](https://publications.polymtl.ca/10366/1/2022_ChristopheBourqueBedard.pdf), Computer Eng. and Software Eng. Dept., Polytechnique Montréal
+
 * 2021 --- **Da Vinci Scholarship**, Fondation et Alumni de Polytechnique
 
 * 2018 --- **Scholarship for Introduction to [Research](/ros-tracing-message-flow/) (UPIR)**, Polytechnique Montréal
