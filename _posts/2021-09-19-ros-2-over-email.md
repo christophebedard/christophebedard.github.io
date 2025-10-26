@@ -404,6 +404,10 @@ However, even if I received multiple facepalm emojis 🤦‍♂️ from a friend
 It turns out that there is no need to use hacky ways to get the size of an array of a non-built-in type: the type support introspection tools include functions that provide this information for a given type.
 See: [github.com/osrf/dynamic_message_introspection/pull/16](https://github.com/osrf/dynamic_message_introspection/pull/16).
 
+## Update (2025-10-26)
+
+I wrote [an `rmw` implementation guide for the ROS 2 documentation](https://docs.ros.org/en/rolling/Tutorials/Advanced/Creating-An-RMW-Implementation.html), which features rmw_email.
+
 ## References
 
 {% include ref_dest.html n="1" %}
