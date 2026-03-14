@@ -42,11 +42,13 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
-* 2024--present --- **Senior Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
-  2022--2024 --- **Software Engineer**  
-  I work on performance analysis.
+* 2026--present --- **Senior Software Engineer, [KUKA](https://www.kuka.com/)** (Mountain View, CA, USA)
 
-* 2019--2020 --- **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, USA)  
+* 2024--2026 --- **Senior Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, CA, USA)  
+  2022--2024 --- **Software Engineer**  
+  I worked on performance analysis.
+
+* 2019--2020 --- **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, CA, USA)  
   I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of an ISO 26262 safety certification process.  
   I also worked on integrating tracing into [Apex.OS](https://www.apex.ai/apex-os), as well as adding instrumentation in order to extract runtime information about all layers of the software stack.
 
