@@ -37,6 +37,7 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Talks
 
+* ROSCon 2025: "rmw_what? Implementing the ROS 2 Middleware Interface" ([video](https://vimeo.com/1136204122), [slides](https://drive.google.com/file/d/1xdHnQcmxsjC4I9aYg-x1vxFAKL72KFsV/view?usp=sharing), [conference](https://roscon.ros.org/2025/))
 * ROSCon 2023: "Improving Your Application's Algorithms and Optimizing Performance Using Trace Data" ([video](https://vimeo.com/879001159), [slides](https://roscon.ros.org/2023/talks/Improving_Your_Applications_Algorithms_and_Optimizing_Performance_Using_Trace_Data.pdf), [conference](https://roscon.ros.org/2023/))
 * ROS World 2021: "Tracing ROS 2 with ros2_tracing" ([video](https://vimeo.com/652633418), [slides](https://github.com/ros2/ros2_tracing/blob/rolling/doc/2021-10-20_ROS_World_2021_-_Tracing_ROS_2_with_ros2_tracing.pdf), [conference](https://roscon.ros.org/world/2021/))
 
