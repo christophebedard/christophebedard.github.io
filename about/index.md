@@ -47,7 +47,8 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 * 2024--2026 --- **Senior Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, CA, USA)  
   2022--2024 --- **Software Engineer**  
-  I worked on performance analysis.
+  I worked on Apex.AI's fork of ROS 2 and made frequent open-source contributions to [ROS 2](https://ros.org/).
+  I also worked on performance analysis, including building a custom analysis plugin for [Eclipse Trace Compass](https://eclipse.dev/tracecompass/).
 
 * 2019--2020 --- **Platform/RTOS Intern, [Apex.AI](https://www.apex.ai/)** (Palo Alto, CA, USA)  
   I worked on a tool for detecting memory allocations and select blocking calls during runtime as part of an ISO 26262 safety certification process.  
