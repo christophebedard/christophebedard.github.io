@@ -43,7 +43,8 @@ My other involvements include the [_Association des sociétés techniques de Pol
 
 ### Working experience
 
-* 2026--present --- **Senior Software Engineer, [KUKA](https://www.kuka.com/)** (Mountain View, CA, USA)
+* 2026--present --- **Senior Software Engineer, [KUKA](https://www.kuka.com/)** (San Jose, CA, USA)  
+  I work on [KUKA AMP](https://amp.kuka.ai/), KUKA's Automation Management Platform.
 
 * 2024--2026 --- **Senior Software Engineer, [Apex.AI](https://www.apex.ai/)** (Palo Alto, CA, USA)  
   2022--2024 --- **Software Engineer**  
