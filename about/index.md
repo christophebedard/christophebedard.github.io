@@ -6,19 +6,21 @@ date: 2023-01-04
 comments: false
 ---
 
-I'm Christophe <span title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</span>, an M.A.Sc. graduate in Computer Engineering from Polytechnique Montréal who is passionate about robotics and systems performance.
-My interests include performance analysis & debugging of distributed systems in robotics.
-I also have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
+I'm Christophe <span title="bé-dar, bay-dar, IPA: /be.daʁ/" style="text-decoration: underline #000 dotted;">Bédard</span>, a Software Engineer with experience in performance analysis & debugging of distributed robotic systems, as well as robotics middleware/framework development.
+I hold an M.A.Sc. in Computer Engineering from Polytechnique Montréal, and I also have a B.Eng. in Computer Engineering and a B.Eng. in Mechanical Engineering.
 
-From 2014 to 2019, I was involved in Élikos, an engineering student design team working on autonomous drones.
-We competed in mission 7 of the [International Aerial Robotics Competition](http://aerialroboticscompetition.org/) at Georgia Tech in Atlanta, USA.
-The goal was to autonomously interact with roombas on the ground in order to guide them to a goal line.
-That had to be done while avoiding obstacles and without any external position sensor.
-In 2015, with a custom platform, my team ranked first in North America for demonstrating autonomous tracking and following of a ground robot.
+Since 2018, I've been a core contributor to [ROS](https://www.ros.org/), the most widely used robotics software framework.
+I'm a member of the [ROS Project Management Committee (PMC)](https://docs.ros.org/en/rolling/The-ROS2-Project/Governance.html), where I help make decisions to guide the project's technical direction and manage day-to-day operations like reviewing & merging contributed code.
+I've given multiple [talks](#talks) about my work with (and contributions to) ROS, including [`ros2_tracing`](https://github.com/ros2/ros2_tracing), the ROS 2 low-overhead performance analysis framework.
+Additionally, I'm a member of the OSRA [Infrastructure PMC](https://infrastructure.openrobotics.org/), supporting Open Robotics developers & the community by providing essential infrastructure and tools.
+
+My robotics journey started back in university.
+From 2014 to 2019, I was involved in Élikos, an engineering student design team building autonomous drones.
+We competed in Mission 7 of the [International Aerial Robotics Competition](http://aerialroboticscompetition.org/) at Georgia Tech in Atlanta, where our custom drone had to autonomously herd ground robots towards a goal line while avoiding obstacles and without any external positioning sensor.
+My team ranked first in North America in 2015 for demonstrating autonomous tracking and following of a ground robot.
 In 2016, we won the award for Most Innovative Vehicle and ranked second.
 I led the team from 2017 to 2019.
-
-My other involvements include the [_Association des sociétés techniques de Polytechnique_](https://astp.polymtl.ca/), the _Association Étudiante de Polytechnique_, as well as the _Fonds d'Appui aux Initiatives Étudiantes_, which awards grants to innovative student projects.
+I was also heavily involved in the broader engineering student community, including the [_Association des sociétés techniques de Polytechnique_](https://astp.polymtl.ca/), the _Association Étudiante de Polytechnique_, and the _Fonds d'Appui aux Initiatives Étudiantes_ grant program for innovative projects.
 
 ### Publications
 
